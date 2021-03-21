@@ -5,12 +5,23 @@
 </template>
 
 <script>
+const axios = require('axios');
+
 export default {
   name: 'HelloWorld',
   props: {
     msg: String
   }
 }
+
+axios.get("https://randomuser.me/api/")
+  .then(res => {
+    console.log(res)
+  })
+  .catch(err => {
+    console.log(err)
+  });
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
