@@ -1,4 +1,4 @@
-# test-vuecli
+Repo for testing vueJS with vueCLI
 
 ## Project setup
 ```
