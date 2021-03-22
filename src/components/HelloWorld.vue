@@ -5,7 +5,7 @@
 </template>
 
 <script>
-const axios = require('axios');
+import axios from 'axios'
 
 export default {
   name: 'HelloWorld',
@@ -14,7 +14,7 @@ export default {
   }
 }
 
-axios.get("https://randomuser.me/api/")
+axios.get("https://randomuser.me/api/?results=5")
   .then(res => {
     console.log(res)
   })
