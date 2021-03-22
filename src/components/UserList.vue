@@ -1,22 +1,20 @@
 <template>
   <div class="container">
     <ul class="list-group">
-      <li 
-        class="list-group-item list-group-item-success"
-        v-for="user in results"
-        :key="user.id.value"
-      >
-        {{ user.name.first }} {{ user.name.last }} | Email: {{ user.email }}
-      </li>
+      <UserListUser :users="results"/>
     </ul>
   </div>
 </template>
 
 <script>
+import UserListUser from './UserListUser.vue'
 import axios from 'axios'
 
 export default {
   name: 'UserList',
+  components: {
+    UserListUser
+  },
   data() {
     return {
       results: []
