@@ -17,9 +17,7 @@ export default {
   name: 'UserList',
   data() {
     return {
-      results: [
-        {name: {first: "default"} , id: {value: 127831 }}
-      ]
+      results: []
     }
   },
   mounted() {
