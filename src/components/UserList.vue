@@ -1,13 +1,15 @@
 <template>
-  <ul class="list-group">
-    <li 
-      class="list-group-item list-group-item-secondary"
-      v-for="user in results"
-      :key="user.id.value"
-    >
-      {{ user.name.first }}
-    </li>
-  </ul>
+  <div class="container">
+    <ul class="list-group">
+      <li 
+        class="list-group-item list-group-item-secondary"
+        v-for="user in results"
+        :key="user.id.value"
+      >
+        {{ user.name.first }}
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script>
